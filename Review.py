@@ -52,3 +52,11 @@ with open(outfile, 'w')as fp1:
 with open(infile, 'r') as fp0:
     with open (outfile, 'w')as fp1:
         fp1.writelines(fp0.readlines())
+        fp1.writelines(fp0.readlines()[2]) #returns the 3rd line of fp0 in fp1
+        
+        
+        
+        
+        
+myEmail = 'aaron.a.anderson@gmail.com'
+'.'.join(myEmail.split('@')).split('.')[:-1]
